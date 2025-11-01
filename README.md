@@ -1,16 +1,88 @@
-# React + Vite
+# Currency Converter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React application that provides real-time currency conversion using live exchange rates. Built with React, Vite, and styled with Tailwind CSS.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 💱 Real-time currency conversion
+- 🔄 Live exchange rates from [@fawazahmed0/currency-api](https://github.com/fawazahmed0/currency-api)
+- 🔄 Swap currencies with one click
+- 📱 Responsive design with a sleek UI
+- 🎨 Beautiful backdrop with glass-morphism effects
+- ⚡ Fast and lightweight
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- Tailwind CSS
+- [Currency API](https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest)
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/raj-goud830/currencyConverter.git
+cd currencyConverter
+```
+
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Start the development server
+```bash
+npm run dev
+```
+
+4. Open [http://localhost:5173](http://localhost:5173) in your browser
+
+## Usage
+
+1. Enter the amount you want to convert in the "From" input field
+2. Select the source currency from the dropdown
+3. Select the target currency from the second dropdown
+4. Click "Convert" to see the result
+5. Use the "swap" button to quickly switch between currencies
+
+## Project Structure
+
+```
+src/
+├── components/
+│   └── InputBox.jsx     # Reusable currency input component
+├── hooks/
+│   └── useCurrencyInfo.js  # Custom hook for fetching exchange rates
+├── App.jsx             # Main application component
+├── main.jsx           # Application entry point
+└── index.css          # Global styles
+```
+
+## Features in Detail
+
+- **Live Exchange Rates**: Uses the @fawazahmed0/currency-api to fetch current exchange rates
+- **Swap Functionality**: Easily swap between source and target currencies
+- **Input Validation**: Handles numeric inputs with proper state management
+- **Responsive Design**: Works seamlessly on desktop and mobile devices
+- **Glass-morphism UI**: Modern UI with backdrop blur effects
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Background image from [Pexels](https://www.pexels.com/)
+- Currency rates provided by [@fawazahmed0/currency-api](https://github.com/fawazahmed0/currency-api)
