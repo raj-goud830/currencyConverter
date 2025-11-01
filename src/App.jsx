@@ -28,11 +28,12 @@ function App() {
     <div
                 className="fixed inset-0 bg-cover bg-center bg-no-repeat bg-fixed"
                 style={{
-                    backgroundImage: `url('https://images.pexels.com/photos/3532540/pexels-photo-3532540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`,
+                    // backgroundImage: `url('https://images.pexels.com/photos/3532540/pexels-photo-3532540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`,
+                    backgroundColor: '#f0f4f8',
                 }}
         >
             <div className="w-full my-[25vh]">
-                <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
+                <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-[#D5F2E3]">
                     <form
                         onSubmit={(e) => {
                             e.preventDefault();
